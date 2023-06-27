@@ -37,7 +37,7 @@ const ExpensesTable = (props) => {
         <tr>
           {monthlyExpenses.map((expense) => (
             <td>
-              <p>{parseInt(expense.value)}</p>
+              <p>{expense.value.toFixed(2)}</p>
             </td>
           ))}
         </tr>
