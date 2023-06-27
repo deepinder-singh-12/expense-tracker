@@ -29,12 +29,16 @@ const ExpensesTable = (props) => {
       <tbody>
         <tr>
           {monthlyExpenses.map((expense) => (
-            <th>{expense.label}</th>
+            <th>
+              <h4>{expense.label}</h4>
+            </th>
           ))}
         </tr>
         <tr>
           {monthlyExpenses.map((expense) => (
-            <td>{expense.value}</td>
+            <td>
+              <p>{parseInt(expense.value)}</p>
+            </td>
           ))}
         </tr>
       </tbody>
